@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.CodeMirror {
+    font-family: "Lato",Helvetica Neue,Helvetica,sans-serif;
+    line-height: 1.67;
+}
+
+.CodeMirror-scroll {
+    padding: 20px;
+}
+
+.CodeMirror pre.CodeMirror-line  {
+    font-size: 1.3rem;
+    color: rgba(0,0,0,.8);
+}
+
+.CodeMirror .cm-header.cm-header-1,
+.CodeMirror .cm-header.cm-header-2,
+.CodeMirror .cm-header.cm-header-3,
+.CodeMirror .cm-header.cm-header-4,
+.CodeMirror .cm-header.cm-header-5,
+.CodeMirror .cm-header.cm-header-6 {
+    color: rgba(0,0,0,.75);
+    font-weight: 900;
+}
+.CodeMirror .cm-header.cm-header-1 { font-size: 1.6em; }
+.CodeMirror .cm-header.cm-header-2 { font-size: 1.5em; }
+.CodeMirror .cm-header.cm-header-3 { font-size: 1.4em; }
+.CodeMirror .cm-header.cm-header-4 { font-size: 1.3em; }
+.CodeMirror .cm-header.cm-header-5 { font-size: 1.2em; }
+.CodeMirror .cm-header.cm-header-6 { font-size: 1.1em; }
+
+.CodeMirror .cm-hash {
+    color: rgba(0,0,0,.28);
+    font-weight: 400;
+}
+
+.CodeMirror span.cm-comment {
+    color: rgba(0,0,0,.8);
+    font-family: "Roboto Mono", "Lucida Sans Typewriter", "Lucida Console", monaco, Courrier, monospace;
+    font-size: .85em;
+}
+
+.CodeMirror span.cm-link {
+    color: rgba(0,0,0,1);
+}
+
+.CodeMirror span.cm-string, .CodeMirror span.cm-url {
+    color: rgba(0,0,0,.28);
+}
+
+.CodeMirror span.cm-quote {
+    color: rgba(0,0,0,.48);
+}
+
+.CodeMirror span.cm-variable-2 {
+    color: rgba(0,0,0,.8);
+}
