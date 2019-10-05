@@ -34,7 +34,7 @@
         });
     }
     
-    $.plugin("marky", function(onChange) {
+    $.plugin("markd", function(onChange) {
         let wrap = this.length > 1 ? $(this[0]) : this;
         wrap.css("position", "relative");
         

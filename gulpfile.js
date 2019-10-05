@@ -9,7 +9,7 @@ const concat    = require("gulp-concat");
 const sass      = require("gulp-sass");
 
 const dirs = {
-    src: "src/marky.js",
+    src: "src/markd.js",
     dest: "libs"
 }
 
@@ -19,20 +19,20 @@ gulp.task("compile-js", function() {
         .pipe(maps.init())
         .pipe(uglify())
         .pipe(maps.write(".maps"))
-        .pipe(rename("marky.js"))
+        .pipe(rename("markd.js"))
         .pipe(gulp.dest(dirs.dest));
 });
 
 gulp.task('compile-sass', function () {
-  return gulp.src(["styles/codemirror.css", "styles/marky.css"])
-    .pipe(concat("marky.min.css"))
+  return gulp.src(["styles/codemirror.css", "styles/markd.css"])
+    .pipe(concat("markd.min.css"))
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('dest'));
 });
 
 gulp.task("build", gulp.series("compile-sass", "compile-js", function() {
-    return gulp.src(["libs/codemirror.js", "libs/markdown.js", "libs/marky.js"])
-        .pipe(concat("marky.min.js"))
+    return gulp.src(["libs/codemirror.js", "libs/markdown.js", "libs/markd.js"])
+        .pipe(concat("markd.min.js"))
         .pipe(uglify())
         .pipe(gulp.dest("dest"));
 }));
