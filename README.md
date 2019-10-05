@@ -10,13 +10,15 @@
 
 ### How to use it?
 
-Include the markd `CSS` in the head section of the HTML file.\
+Include the markd `CSS` in the head section of the HTML file.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/0xbin/markd/dest/markd.min.css"></script>
 ```
 
-Markd is a [DOMLang.js](https://github.com/0xbin/domlang) extension, because of that you have include the [DOMLang.js](https://github.com/0xbin/domlang).
+Markd is a plugin for [DOMLang.js](https://github.com/0xbin/domlang), because of that you have include the [DOMLang.js](https://github.com/0xbin/domlang) first.
+
+**Example →**
 
 ```html
 <div id="markd"></div>
